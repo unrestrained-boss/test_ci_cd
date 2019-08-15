@@ -1,9 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h3>heheaa</h3>
-<a href="javascript:void(0)" routerLink="/system">banner管理</a><br>
-<a href="javascript:void(0)" routerLink="/system/log">日志管理</a><br>
-<a href="javascript:void(0)" routerLink="/system/administration">管理员管理</a><br>
-<a href="javascript:void(0)" routerLink="/system/rule">角色管理</a><br>
-<a href="javascript:void(0)" routerLink="/system/logistics-company">物流管理</a><br>
-<a href="javascript:void(0)" routerLink="/system/configure">系统配置</a><br>
-<router-outlet></router-outlet>
+<main class="container">
+
+  <header class="header">
+
+  <p-tieredMenu #menu [popup]="true" [model]="items"></p-tieredMenu>
+  <button #btn type="button" pButton label="菜单" (click)="menu.toggle($event)"></button>
+
+</header>
+  <section class="content">
+    <router-outlet></router-outlet>
+</section>
+</main>
