@@ -8,11 +8,17 @@ import {Route, RouterModule} from '@angular/router';
 const routes: Route[] = [
   {
     path: '',
-    component: ProductComponent
+    component: ProductComponent,
+    data: {
+      title: '产品管理',
+    }
   },
   {
     path: 'classification',
-    component: ClassificationComponent
+    component: ClassificationComponent,
+    data: {
+      title: '分类管理',
+    }
   }
 ];
 @NgModule({

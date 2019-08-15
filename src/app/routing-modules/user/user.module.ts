@@ -7,6 +7,9 @@ const routes: Route[] = [
   {
     path: '',
     component: UserComponent,
+    data: {
+      title: '用户管理',
+    }
   }
 ];
 

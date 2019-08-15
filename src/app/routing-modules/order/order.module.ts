@@ -7,11 +7,17 @@ import {Route, RouterModule} from '@angular/router';
 const routes: Route[] = [
   {
     path: '',
-    component: OrderComponent
+    component: OrderComponent,
+    data: {
+      title: '订单管理',
+    }
   },
   {
     path: 'reward',
-    component: RewardComponent
+    component: RewardComponent,
+    data: {
+      title: '奖励管理',
+    }
   }
 ];
 
