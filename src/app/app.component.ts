@@ -48,8 +48,4 @@ export class AppComponent {
 
   constructor() {
   }
-
-  private handleClick() {
-    console.log(123);
-  }
 }

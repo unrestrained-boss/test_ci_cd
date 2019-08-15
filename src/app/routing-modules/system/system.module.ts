@@ -7,6 +7,9 @@ import {LogisticsCompanyComponent} from './logistics-company/logistics-company.c
 import {RuleComponent} from './rule/rule.component';
 import {RouterModule, Routes} from '@angular/router';
 import {ConfigureComponent} from './configure/configure.component';
+import {TableModule} from 'primeng/table';
+import {PaginatorModule} from 'primeng/paginator';
+import {ButtonModule} from 'primeng/button';
 
 const routes: Routes = [
   {
@@ -56,6 +59,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [LogComponent, BannerComponent, AdministrationComponent, LogisticsCompanyComponent, RuleComponent, ConfigureComponent],
   imports: [
+    ButtonModule,
+    PaginatorModule,
+    TableModule,
     RouterModule.forChild(routes),
     CommonModule
   ]
